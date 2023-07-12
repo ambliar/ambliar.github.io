@@ -1,20 +1,19 @@
 head {
     background-color: #03312E;
     text-align: center;
-    font-family: Georgia, sans-serif;
-    font-size: large;
+    font-family: Helvetica, sans-serif;
+    font-size: medium;
 }
 body {
     margin: 0;
     padding: 0;
-    font-family: Georgia, sans-serif;
+    font-family:Helvetica, sans-serif;
     font-size: medium;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #F2F2F2;
 }
-
 header {
     background-color: #03312E;
     padding: 10px;
@@ -60,7 +59,7 @@ footer {
     background-color: #03312E;
     color: #FFF;
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 
 footer p {
