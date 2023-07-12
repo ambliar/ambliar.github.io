@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    text-align: center;
+    background-color: #009F93;
 }
 
 .nav li {
