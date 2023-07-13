@@ -2,33 +2,70 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>References</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Common styles for all screen sizes */
+        h1 {
+            text-align: center;
+        }
+
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 767px) {
+            /* Styles for small screens */
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        /* Media query for screens between 768px and 1023px */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            /* Styles for medium screens */
+            h1 {
+                font-size: 36px;
+            }
+        }
+
+        /* Media query for screens larger than 1023px */
+        @media (min-width: 1024px) {
+            /* Styles for large screens */
+            h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>References & Resources</h1>
-<ul class="nav">
-    <li><a href="home.index.html">Home</a></li>
-    <li><a href="credentials.html">About</a></li>
-    <li><a href="references.html">References & Resources</a></li>
-    <li class="dropdown">
-        <a href="#" class="dropbtn">Projects</a>
-        <div class="dropdown-content">
-            <a href="#">Let's Learn 1</a>
-            <a href="#">Let's Learn 2</a>
-            <a href="#">Let's Learn 3</a>
-        </div>
-    </li>
-</ul>
-<p>References
-    Begley, L. (2020). AA & PA Students: Logging in, editing student information. Retrieved 2023, from https://umsystem.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e1b262a3-260d-40bf-91b3-afac0125504a.
-    Munn, M. (2020). UMKC School of Medicine Master of Science in Anesthesia Program Project Concert User Guide for Students. Kansas City; UMKC School of Medicine Master of Science in Anesthesia Program.
-    Scheduling Your Daily Clinical Preceptor Evaluations. (n.d.). Retrieved from https://umsystem.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=66266b75-7603-4295-a5b4-afab010021b8&start=0.369848.</p>
+    <h1>References & Resources</h1>
+    <ul class="nav">
+        <li><a href="home.index.html">Home</a></li>
+        <li><a href="credentials.html">About</a></li>
+        <li><a href="references.html">References & Resources</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+                <a href="Learn 1.html">Learn 1</a>
+                <a href="#">Learn 2</a>
+                <a href="#">Learn 3</a>
+            </div>
+        </li>
+        <li><a href="https://secure.projectconcert.com/umkcsom/login.aspx">Project Concert</a></li>
+    </ul>
+    <p>References <br>
+        Begley, L. (2020). AA & PA Students: Logging in, editing student information. Retrieved 2023, from https://umsystem.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e1b262a3-260d-40bf-91b3-afac0125504a.<br><br>
+    
+        Munn, M. (2020). UMKC School of Medicine Master of Science in Anesthesia Program Project Concert User Guide for Students. Kansas City; UMKC School of Medicine Master of Science in Anesthesia Program.<br><br>
+        
+        Scheduling Your Daily Clinical Preceptor Evaluations. (n.d.). Retrieved from https://umsystem.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=66266b75-7603-4295-a5b4-afab010021b8&start=0.369848.
+    </p>
     <footer>
-        <p>Amber Blair<br>
-        <a>blairamb@umsystem.edu</a>
+        <p>
+            Amber Blair
+            <a href="mailto:blairamb@umsystem.edu">blairamb@umsystem.edu</a>
+            &copy;<em> 2023</em>
         </p>
-        &copy;<em>2023</em>
-        </footer>
-        </body>
+    </footer>
+</body>
+</html>
