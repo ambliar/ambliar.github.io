@@ -2,84 +2,54 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="custom.css">
     <style>
-        /* Media query for mobile layouts */
-        @media only screen and (max-width: 767px) {
-            .mobile-nav-icon {
-                display: block;
-                text-align: right;
-                padding: 10px;
-                cursor: pointer;
-            }
+        footer {
+            background-image: url("ambliar.github.io/19859.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 20px;
+        }
 
-            .mobile-nav-icon .hamburger {
-                display: inline-block;
-                width: 20px;
-                height: 3px;
-                background-color: #333;
-                margin-bottom: 5px;
-            }
+        .footer-icon {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
 
-            .mobile-nav-menu {
-                display: none;
-            }
+        .footer-icon img,
+        .footer-icon span {
+            margin-right: 10px;
+        }
 
-            .mobile-nav-menu.active {
-                display: block;
-            }
-
-            .mobile-nav-menu ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .mobile-nav-menu li {
-                padding: 8px;
-            }
-
-            .mobile-nav-menu li a {
-                display: block;
-                color: #333;
-                text-decoration: none;
-            }
+        .footer-icon a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <h1>Welcome</h1>
     <h2>Learn How To Navigate Project Concert</h2>
-
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav-icon" onclick="toggleMobileNav()">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-    </div>
-
-    <div class="mobile-nav-menu" id="mobileNavMenu">
-        <ul class="nav">
-            <li><a href="home.index.html">Home</a></li>
-            <li><a href="credentials.html">About</a></li>
-            <li><a href="references.html">References & Resources</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Projects</a>
-                <div class="dropdown-content">
-                    <a href="Learn-1.html">Learn 1</a>
-                    <a href="#">Learn 2</a>
-                    <a href="#">Learn 3</a>
-                </div>
-            </li>
-            <li><a href="https://secure.projectconcert.com/umkcsom/login.aspx">Project Concert</a></li>
-        </ul>
-    </div>
-
-    <!-- Rest of your HTML code -->
+    <ul class="nav">
+        <li><a href="home.index.html">Home</a></li>
+        <li><a href="credentials.html">About</a></li>
+        <li><a href="references.html">References & Resources</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+                <a href="Learn-1.html">Learn 1</a>
+                <a href="#">Learn 2</a>
+                <a href="#">Learn 3</a>
+            </div>
+        </li>
+        <li><a href="https://secure.projectconcert.com/umkcsom/login.aspx">Project Concert</a></li>
+    </ul>
 
     <p>
         Project Concert is a web-based system created specifically for the Master of Science in Anesthesia (MSA) program. Its purpose is to track data related to the program and provide a user-friendly interface for MSA students to document their clinical experiences. The system allows students to record the precise start and end times of their total clinical day and conveniently schedule daily clinical evaluations.
@@ -94,18 +64,16 @@
     </p>
 
     <footer>
-        <p>
-            Amber Blair
-            <a href="mailto:blairamb@umsystem.edu">blairamb@umsystem.edu</a>
-            &copy;<em> 2023</em>
-        </p>
+        <div class="footer-icon">
+            <img class="email-icon" src="android-chrome-192x192.png" alt="Email Icon">
+            <a href="mailto:blairamb@umkc.edu">blairamb@umkc.edu</a>
+        </div>
+        <div class="footer-icon">
+            <span class="phone-icon">&#9742;</span>
+            <a href="tel:1234567890">123-456-7890</a>
+        </div>
+        &copy;<em> 2023</em>
     </footer>
-
-    <script>
-        function toggleMobileNav() {
-            var mobileNavMenu = document.getElementById('mobileNavMenu');
-            mobileNavMenu.classList.toggle('active');
-        }
-    </script>
 </body>
 </html>
+
