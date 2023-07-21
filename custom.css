@@ -4,3 +4,53 @@
     height: 20px;
     background-image: url("android-chrome-192x192.png");
 }
+.footer-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-icon {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  footer {
+    background-image: url("https://ambliar.github.io/footer-wave-blue-page-divider-11562998929llabhpuc5d.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-icon img,
+.footer-icon span {
+  margin-right: 10px;
+}
+
+.footer-icon a {
+  color: white;
+  text-decoration: none;
+}
+/* Add the required styling for footer icons */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333; /* Icon color */
+  transition: transform 0.3s ease; /* Transition for the hover effect */
+}
+
+/* Add hover effect to enlarge the icons slightly on hover */
+.footer-icons a:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
