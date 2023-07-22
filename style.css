@@ -73,60 +73,25 @@ content p {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background-color: #03312E;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer p {
-    margin: 0;
-    flex-grow: 1;
-}
-
-footer a {
-    color: #FFF;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-em {
-    font-style: normal;
-}
-
-footer:hover {
-    background-color: #024D48;
-    transition: background-color 0.3s ease;
-}
-
-footer:hover a {
-    color: #F2F2F2;
-    transition: color 0.3s ease;
-}
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}/* Custom styling for the email icon */
+.email-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("icons8-email-50.png");
+    transition: transform 0.3s ease; /* Transition for the hover effect */
   }
   
-  .footer-icons i {
-    margin-right: 5px;
-    font-size: 20px;
-    color: #555555;
+  /* Custom styling for the phone icon */
+  .phone-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("icons8-smartphone-50 (1).png");
+    transition: transform 0.3s ease; /* Transition for the hover effect */
   }
   
-  .footer-icons a {
-    text-decoration: none;
-    color: #555555;
+  /* Add hover effect to enlarge both email and phone icons slightly on hover */
+  .footer-icons a:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
   }
-  
